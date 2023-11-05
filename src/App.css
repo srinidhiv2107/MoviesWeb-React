@@ -36,17 +36,23 @@ nav a {
   box-shadow 0.2s ease-in-out;
   transform: translateY(0);
 }
+
 nav a:first-child {
-  margin-left: 25px;
-  color: #1da0e0; /*👈*/
+  margin-left: 20px;
 }
-nav a:not(a:first-child):hover { /*👈*/
+nav a:last-child {
+  margin-right: 20px;
+}
+
+nav a:not(.active):hover {
   transform: translateY(-2px);
   box-shadow: 0 0 7px #1da0e0;
 }
-/*nav a.active{*/
-/*    color: #1da0e0;*/
-/*}*/
+
+nav .active {
+  font-size: 21px;
+  color: #1da0e0;
+}
 
 nav .genre-container {
   display: flex;
